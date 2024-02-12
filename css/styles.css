@@ -77,7 +77,8 @@ a:active {
     font-weight: 500;
 }
 
-.button {
+.button,
+.button:visited {
     display: inline-block;
     background-color: #6E02FF;
     color: #FFFFFF;
