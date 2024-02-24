@@ -19,21 +19,20 @@ header {
     background-color: #FFF7E6;
     text-align: center;
     padding: 10px;
-    margin: 10px 0;
+    top: 0;
     position: fixed;
     width: 100%;
+}
 
     .css-box-shadow {
         /*start ------------*/
         width: [object Object]px;
         height: [object Object]px;
-        background: #F8F8F8;
         border: solid #BDBDBD 0;
         box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.3);
         -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.3);
         -moz-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.3);
     }
-}
 
 main {
     padding-top: 210.19px;
@@ -208,8 +207,6 @@ a:active {
     background-color: #FFF7E6;
     text-align: center;
     padding: 20px 0;
-    display: inline-block;
-    width: 100%;
 }
 
 #hero span {
