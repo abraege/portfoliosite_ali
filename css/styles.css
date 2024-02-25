@@ -22,17 +22,8 @@ header {
     top: 0;
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
-
-    .css-box-shadow {
-        /*start ------------*/
-        width: [object Object]px;
-        height: [object Object]px;
-        border: solid #BDBDBD 0;
-        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.3);
-        -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.3);
-        -moz-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.3);
-    }
 
 main {
     padding-top: 210.19px;
@@ -90,7 +81,12 @@ img {
 a {
     color: #6E02FF;
     text-decoration: none;
-    transition-duration: .4s color;
+    transition-property: color;
+    transition-duration: .4s
+}
+
+#work h3 {
+    margin-top: 0;
 }
 
 a:visited {
@@ -118,7 +114,9 @@ a:active {
     padding: 10px;
     border-radius: 0px;
     border: 2px solid #6E02FF;
-    transition-duration: 0.4s opacity;
+    transition-property: opacity;
+    transition-duration: 0.4s
+
 }
 
 .button:hover,
@@ -133,7 +131,8 @@ a:active {
     color: #6E02FF;
     border: 2px solid #6E02FF;
     margin: 5px;
-    transition-duration: 0.4s background-color;
+    transition-property: background-color;
+    transition-duration: 0.4s
 }
 
 .button.contact:hover,
@@ -263,45 +262,50 @@ a:active {
   }
 
 /* Tea/Coffee Break Animation */
-<style>svg#freepik_stories-coffee-break:not(.animated) .animable {opacity: 0;}svg#freepik_stories-coffee-break.animated #freepik--Plant--inject-4 {animation: 1.5s Infinite  linear wind;animation-delay: 0s;}svg#freepik_stories-coffee-break.animated #freepik--Clock--inject-4 {animation: 1.5s Infinite  linear spin;animation-delay: 0s;}            @keyframes wind {                0% {                    transform: rotate( 0deg );                }                25% {                    transform: rotate( 1deg );                }                75% {                    transform: rotate( -1deg );                }            }                 @keyframes spin {             from {                 transform: rotate(0);               }               to {                 transform: rotate(360deg);               }         }     .animator-hidden { display: none; }</style>
+svg#freepik_stories-coffee-break:not(.animated) .animable {opacity: 0;}svg#freepik_stories-coffee-break.animated #freepik--Plant--inject-4 {animation: 1.5s Infinite  linear wind;animation-delay: 0s;}svg#freepik_stories-coffee-break.animated #freepik--Clock--inject-4 {animation: 1.5s Infinite  linear spin;animation-delay: 0s;}            @keyframes wind {                0% {                    transform: rotate( 0deg );                }                25% {                    transform: rotate( 1deg );                }                75% {                    transform: rotate( -1deg );                }            }                 @keyframes spin {             from {                 transform: rotate(0);               }               to {                 transform: rotate(360deg);               }         }     .animator-hidden { display: none; }
 
 /* Nav Animation */
-nav.top-left-borders a:before
+nav a
 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 2px;
-    height: 0px;
-    background: #6E02FF;
-    content: "";
-    opacity: 1;
-    transition: all 0.3s;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
 }
 
+nav a:hover {
+    text-decoration: none;
+}
 
-nav.top-left-borders a:after
+nav.top-bottom-borders-out a:before, nav.top-bottom-borders-out a:after
 {
     position: absolute;
-    top: 0px;
     left: 0px;
     width: 100%;
     height: 2px;
     background: #FF2C64;
     content: "";
-    opacity: 1;
-    transition: all 0.3s;
-}
-
-nav.top-left-borders a:hover:before
-{
-    height: 100%;
-}
-
-nav.top-left-borders a:hover:after
-{
     opacity: 0;
-    top: 100%;
+    transition: all 0.4s;
+}
+
+nav.top-bottom-borders-out a:before
+{
+    top: -8px;
+    transform: translateY(15px);
+}
+
+nav.top-bottom-borders-out a:after
+{
+    bottom: -8px;
+    transform: translateY(-10px);
+}
+
+nav.top-bottom-borders-out a:hover:before, nav.top-bottom-borders-out a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 /* Media Queries */
