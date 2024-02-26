@@ -131,7 +131,7 @@ a:active {
     color: #6E02FF;
     border: 2px solid #6E02FF;
     margin: 5px;
-    transition-property: background-color;
+    transition-property: background-color, color;
     transition-duration: 0.4s
 }
 
