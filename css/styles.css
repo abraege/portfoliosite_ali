@@ -26,7 +26,7 @@ header {
 }
 
 main {
-    padding-top: 210.19px;
+    padding-top: 190.188px;
 }
 
 body {
@@ -325,7 +325,7 @@ Medium devices (640px and larger)
     }
 
     main {
-        padding-top: 165.59px;
+        padding-top: 132.594px;
     }
 
     body {
@@ -347,7 +347,7 @@ Medium devices (640px and larger)
         display: table;
     }
 
-    #about-page h3 {
+    #about h3 {
         margin-top: 0;
     }
 }
