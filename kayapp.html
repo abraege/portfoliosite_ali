@@ -9,26 +9,29 @@
     <link href="img/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/08e801e59d.js" crossorigin="anonymous"></script>    
     <title>Ali Brae Design | UX</title>
 </head>
 
 <body id="kayapp-page">
-    <!-- Header section -->
-    <header id="top" class="css-box-shadow">
-        <div class="container">
-            <img class="logo" src="img/logos/logos_svg/transparent/logo_wide.svg" alt="Ali Brae Design">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Get in Touch</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+	<!-- Header section -->
+	<header id="#top">
+		<div class="container">
+			<div class="navtoggle" id="myNavtoggle">
+				<img class="logo" src="img/logos/logos_svg/transparent/logo_wide.svg" alt="Ali Brae Design">
+				<nav class="top-bottom-borders-out">
+					<ul>
+						<li><a href="index.html">Work</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#contact" onclick="menuToggle()">Get in Touch</a></li>
+						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
 
     <main>
         <div class="container" id="kayapp">
@@ -240,6 +243,7 @@
 			<p>Copyright @Ali Brae Geter 2024</p>
 		</div>
 	</footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
