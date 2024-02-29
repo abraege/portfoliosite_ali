@@ -5,7 +5,7 @@ Secondary color (wine): #882741;
 Black: #000000;
 White: #FFFFFF;
 Neutral 1 (cream): #fafbf5;
-Neutral 2 (midnight): #16004B;
+Neutral 2 (midnight): #1C061D;
 Accent 1 (marigold): #FFB435;
 Accent 2 (periwinkle): #8182FF;
 Accent 3: (hot pink): #FF2C64;
@@ -47,21 +47,17 @@ h2,
 h3,
 h4 {
     line-height: 1.4;
-    font-family: 'Lora', serif;
+    font-family: 'Shippori Mincho B1', serif;
 }
 
 h1 {
-    font-size: 2.16em;
-    font-weight: 700;
-}
-
-#primary-title {
-    color: #6E02FF;
+    font-size: 2.0em;
+    font-weight: 500;
 }
 
 h2 {
-    font-size: 1.8em;
-    font-weight: 700;
+    font-size: 1.6em;
+    font-weight: 400;
 }
 
 h3 {
@@ -76,6 +72,10 @@ h4 {
 
 p {
     font-family: Figtree;
+}
+
+#primary-title {
+    color: #8182FF;
 }
 
 img {
@@ -156,7 +156,7 @@ a:active {
 
 #work .row {
     padding-bottom: 25px;
-    border-bottom: 1px solid #16004B;
+    border-bottom: 1px solid #1C061D;
 }
 
 .logo {
@@ -234,7 +234,8 @@ a:active {
   }
 
 #hero {
-    background-color: #fafbf5;
+    color: #fafbf5;
+    background-color: #1C061D;
     text-align: center;
     padding: 20px 0;
 }
@@ -244,7 +245,7 @@ a:active {
 }
 
 #bio-image {
-    max-width: 350px;
+    max-width: 225px;
     padding: 20px, 0;
 }
 
@@ -432,6 +433,10 @@ Medium devices (700px and larger)
 
     body {
         font-size: 16px;
+    }
+
+    #hero {
+        padding: 100px;
     }
 
     .col-md-6 {
