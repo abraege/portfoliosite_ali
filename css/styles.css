@@ -6,9 +6,8 @@ Black: #000000;
 White: #FFFFFF;
 Neutral 1 (cream): #fafbf5;
 Neutral 2 (midnight): #1C061D;
-Accent 1 (marigold): #FFB435;
-Accent 2 (periwinkle): #8182FF;
-Accent 3: (hot pink): #FF2C64;
+Accent 1 (periwinkle): #c8ccfe;
+Accent 2: (hot pink): #FF2C64;
 */
 
 * {
@@ -17,7 +16,7 @@ Accent 3: (hot pink): #FF2C64;
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 header {
     background-color: #fafbf5;
@@ -135,7 +134,7 @@ a:active {
     border: 2px solid #6E02FF;
     margin: 5px;
     transition-property: background-color, color;
-    transition-duration: 0.4s
+    transition-duration: 0.4s;
 }
 
 .button.contact:hover,
@@ -214,24 +213,24 @@ a:active {
     padding-right: 15px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
     display: block;
-  }
+}
 
 .navtoggle.responsive nav {
     padding: 24px 0 0;
-  }
+}
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
     display: block;
     text-align: center;
     padding: 10px 0;
     border-top: 1px solid #6E02FF;
-  }
-  
-  .navtoggle.responsive li:last-child  {
+}
+
+.navtoggle.responsive li:last-child {
     padding: 0 0 10px;
-  }
+}
 
 #hero {
     color: #fafbf5;
@@ -253,105 +252,14 @@ a:active {
     text-align: center;
 }
 
+#last {
+    padding-top: 20px;
+}
+
 .animated {
     max-width: 300px;
     width: 100%;
     height: auto;
-}
-
-.berlin-illustration {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-@keyframes color-change {
-    0% {
-        fill: #edc655;
-    }
-
-    50% {
-        fill: #fcffad;
-    }
-
-    100% {
-        fill: #f76414;
-    }
-}
-
-.sun {
-    animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-    from {
-        transform: translate(0, 50px);
-    }
-
-    to {
-        transform: translate(200px, 50px);
-    }
-}
-
-.cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-
-    to {
-        transform: translate(100px, 48px);
-    }
-}
-
-.cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-/* Tea/Coffee Break Animation */
-svg#freepik_stories-coffee-break:not(.animated) .animable {
-    opacity: 0;
-}
-
-svg#freepik_stories-coffee-break.animated #freepik--Plant--inject-4 {
-    animation: 1.5s Infinite linear wind;
-    animation-delay: 0s;
-}
-
-svg#freepik_stories-coffee-break.animated #freepik--Clock--inject-4 {
-    animation: 1.5s Infinite linear spin;
-    animation-delay: 0s;
-}
-
-@keyframes wind {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    25% {
-        transform: rotate(1deg);
-    }
-
-    75% {
-        transform: rotate(-1deg);
-    }
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.animator-hidden {
-    display: none;
 }
 
 /* Nav Animation */
@@ -395,6 +303,56 @@ nav.top-bottom-borders-out a:hover:after {
     transform: translateY(0px);
 }
 
+/* Contact form styling */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c8ccfe;
+    border-radius: 0px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #08001B;
+    resize: none;
+}
+
+input[type=submit] {
+    background-color: #FFFFFF;
+    color: #6E02FF;
+    padding: 10px;
+    border: 2px solid #6E02FF;
+    width: 100px;
+    margin: 5px;
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    transition-property: background-color, color;
+    transition-duration: 0.4s;
+}
+
+input[type=submit]:hover input[type=submit]:active {
+    background-color: #6E02FF;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer {
+    padding: 200px, 0;
+}
+
+#footer {
+    background-color: #c8ccfe;
+
+}
+
 /* Media Queries */
 /* ==============================
 Medium devices (700px and larger)
@@ -415,9 +373,9 @@ Medium devices (700px and larger)
         display: inline-block;
     }
 
-    nav > ul {
+    nav>ul {
         margin: 1em 0;
-      }
+    }
 
     .navtoggle li:not(:last-child) {
         display: inline-block;
@@ -461,6 +419,24 @@ Medium devices (700px and larger)
     .logo {
         max-width: 250px;
     }
+
+    #about {
+        padding-top: 35px;
+    }
+
+    input[type=text],
+select,
+textarea {
+    max-width: 515px;
+
+}
+
+.animated {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+}
+
 }
 
 /* ==============================
@@ -479,10 +455,43 @@ Large devices (1024px or larger)
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
+        padding: auto 100px;
+    }
+
+    .navtoggle.responsive li {
+        border-top: 0;
+    }
+
+    .navtoggle.responsive nav {
+        padding: 0;
+    }
+
+    .navtoggle.responsive li {
+        padding: 0;
+    }
+
+    .animated {
+        max-width: 400px;
+        width: 100%;
+        height: auto;
     }
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+    .container {
+        max-width: 2400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        font-size: 1.2em;
+    }
+
+    h {
+        font-size: 1.2em;
+    }
+}
