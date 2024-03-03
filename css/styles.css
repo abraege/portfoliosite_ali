@@ -90,6 +90,10 @@ p {
 
 img {
     width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 a {
@@ -158,6 +162,9 @@ a:active {
 /* Layout styling */
 .container {
     padding: 0 15px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .row {
@@ -176,9 +183,14 @@ a:active {
 
 .center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 80%;
+}
+
+.center #view-my-resume {
+    text-align: center;
+    width: auto;
 }
 
 .social-icon {
@@ -265,6 +277,16 @@ a:active {
 
 #last {
     padding-top: 20px;
+}
+
+#kayapp-page h2 {
+    margin-top: 0;
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 20px;
 }
 
 .animated {
@@ -440,18 +462,34 @@ Medium devices (700px and larger)
     }
 
     input[type=text],
-select,
-textarea {
-    max-width: 515px;
+    select,
+    textarea {
+        max-width: 515px;
 
-}
+    }
 
-.animated {
-    max-width: 350px;
-    width: 100%;
-    height: auto;
-}
+    .animated {
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+    }
 
+    .center {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #ideation .center,
+    #essential-flows .center,
+    #key-improvements .center,
+    #ux-goals .center {
+        text-align: left;
+    }
 }
 
 /* ==============================
@@ -503,10 +541,10 @@ X-large devices (1440px or larger)
     }
 
     body {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     h {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 }
