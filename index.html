@@ -41,7 +41,7 @@
 		<div id="hero">
 			<div class="container">
 				<h1 id="primary-title">Hi! I'm Ali.</h1>
-					<h2>A UX Designer and frontend developer based out of Arizona.</h2>
+				<h2>A UX Designer and frontend developer based out of Arizona.</h2>
 				<p>As a UX Designer, I use data-driven storytelling to craft experiences that transcend beyond the
 					screen.
 					It’s not just about the numbers... I believe that when we put people first, we can build products
@@ -726,36 +726,37 @@
 						</clipPath>
 					</defs>
 				</svg>
-				
+
 				<div class="container" id="contact-form">
 					<div>
 						<form name="contact-form" action="/action_page.php" method="post">
 							<div class="form">
-								<div>
+								<div class="label">
 									<label for="name">Name</label>
 								</div>
 								<div>
-								<input type="text" id="name" name="name" placeholder="Your name" required="">
-							</div>
-							</div>
-
-							<div class="form">
-								<div>
-								<label for="your-email">Email</label>
-							</div>
-								<input type="text" id="your-email" name="your-email" placeholder="Your email" required="">
+									<input type="text" id="name" name="name" placeholder="Your name" required="">
+								</div>
 							</div>
 
 							<div class="form">
-								<div>
-								<label for="subject">Message</label>
-							</div>
-								<textarea id="subject" name="subject" placeholder="Say hello!"
-									style="height:150px" required=""></textarea>
+								<div class="label">
+									<label for="your-email">Email</label>
+								</div>
+								<input type="text" id="your-email" name="your-email" placeholder="Your email"
+									required="">
 							</div>
 
 							<div class="form">
-								<input type="submit" value="Send">
+								<div class="label">
+									<label for="subject">Message</label>
+								</div>
+								<textarea id="subject" name="subject" placeholder="Say hello!" style="height:150px"
+									required=""></textarea>
+							</div>
+
+							<div class="form">
+								<input type="submit" class="button" value="Send" id="send-message">
 							</div>
 						</form>
 
