@@ -268,7 +268,7 @@ a:active {
 
 #bio-image {
     max-width: 225px;
-    padding: 20px, 0;
+    padding: 20px;
 }
 
 #contact {
@@ -378,7 +378,7 @@ input[type=submit]:hover input[type=submit]:active {
 }
 
 footer {
-    padding: 200px, 0;
+    padding: 200px 0;
 }
 
 #contact {
@@ -508,7 +508,6 @@ Large devices (1024px or larger)
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        padding: auto 100px;
     }
 
     .navtoggle.responsive li {
