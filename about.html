@@ -731,28 +731,38 @@
                         </clipPath>
                     </defs>
                 </svg>
-                <div class="container" id="contact-form">
-                    <div>
-                        <h3>Say hello!</h3>
-                        <form action="/action_page.php">
-                            <div>
-                                <label for="name"></label>
-                                <input type="text" id="name" name="name" placeholder="Your name">
-                            </div>
 
-                            <div>
-                                <label for="name"></label>
-                                <input type="text" id="your-email" name="your-email" placeholder="Your email">
+				<div class="container" id="contact-form">
+					<div>
+						<form name="contact-form" action="/action_page.php" method="post">
+							<div class="form">
+								<div>
+									<label for="name">Name</label>
+								</div>
+								<div>
+								<input type="text" id="name" name="name" placeholder="Your name" required="">
+							</div>
+							</div>
 
-                                <label for="subject"></label>
-                                <textarea id="subject" name="subject" placeholder="Write a message here!"
-                                    style="height:150px"></textarea>
-                            </div>
+							<div class="form">
+								<div>
+								<label for="your-email">Email</label>
+							</div>
+								<input type="text" id="your-email" name="your-email" placeholder="Your email" required="">
+							</div>
 
-                            <div>
-                                <input type="submit" value="Send">
-                            </div>
-                        </form>
+							<div class="form">
+								<div>
+								<label for="subject">Message</label>
+							</div>
+								<textarea id="subject" name="subject" placeholder="Say hello!"
+									style="height:150px" required=""></textarea>
+							</div>
+
+							<div class="form">
+								<input type="submit" value="Send">
+							</div>
+						</form>
 
                         <div>
                             <!-- social media area -->

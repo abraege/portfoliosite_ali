@@ -143,8 +143,8 @@ a:active {
     text-decoration: none;
 }
 
-.button.contact {
-    background-color: transparent;
+.button.send-message {
+    background-color: #FFFFFF;
     color: #6E02FF;
     border: 2px solid #6E02FF;
     margin: 5px;
@@ -152,8 +152,8 @@ a:active {
     transition-duration: 0.4s;
 }
 
-.button.contact:hover,
-.button.contact:active {
+.button.send-message:hover,
+.button.send-message:active {
     background-color: #6E02FF;
     color: #ffffff;
     text-decoration: none;
@@ -377,13 +377,16 @@ input[type=submit]:hover input[type=submit]:active {
     text-decoration: none;
 }
 
+label {
+    text-align: left;
+    }
+
 footer {
     padding: 200px 0;
 }
 
 #contact {
     background-color: #c8ccfe;
-
 }
 
 /* Media Queries */
