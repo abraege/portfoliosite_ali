@@ -501,6 +501,7 @@ Medium devices (700px and larger)
     #key-improvements .center,
     #ux-goals .center {
         text-align: left;
+        max-width: 515px;;
     }
 }
 
