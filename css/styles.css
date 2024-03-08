@@ -4,9 +4,9 @@ Primary color (vivid purple): #6E02FF;
 Secondary color (wine): #882741;
 Black: #000000;
 White: #FFFFFF;
-Neutral 1 (cream): #fafbf5;
+Neutral 1 (cream): #FFF7E6;
 Neutral 2 (midnight): #1C061D;
-Accent 1 (periwinkle): #c8ccfe;
+Accent 1 (periwinkle): #C0C8FF;
 Accent 2: (hot pink): #FF2C64;
 */
 
@@ -19,7 +19,7 @@ html {
 }
 
 header {
-    background-color: #fafbf5;
+    background-color: #FFF7E6;
     padding: 10px 0 4px;
     top: 0;
     position: fixed;
@@ -85,7 +85,7 @@ p {
 }
 
 #primary-title {
-    color: #8182FF;
+    color: #6E02FF;
 }
 
 img {
@@ -142,7 +142,7 @@ footer {
 
 .button:hover,
 .button:active {
-    opacity: 0.85;
+    opacity: 0.80;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -194,15 +194,15 @@ footer {
 }
 
 .center {
-text-align: center;
-margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .center-narrow {
     text-align: center;
     margin: 0 auto;
     max-width: 515px;
-    }
+}
 
 .center #view-my-resume {
     text-align: center;
@@ -272,8 +272,8 @@ a:active {
 }
 
 #hero {
-    color: #fafbf5;
-    background-color: #1C061D;
+    color: #000000;
+    background-color: #FFFFFF;
     text-align: center;
     padding: 20px 0;
 }
@@ -358,7 +358,7 @@ select,
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #c8ccfe;
+    border: 0.5px solid #000000;
     border-radius: 0px;
     box-sizing: border-box;
     margin-top: 4px;
@@ -386,7 +386,8 @@ input[type=submit].button {
     transition-duration: 0.4s;
 }
 
-input[type=submit]:hover.button, input[type=submit]:active.button {
+input[type=submit]:hover.button,
+input[type=submit]:active.button {
     background-color: #6E02FF;
     color: #ffffff;
     text-decoration: none;
@@ -394,10 +395,14 @@ input[type=submit]:hover.button, input[type=submit]:active.button {
 
 .label {
     text-align: left;
-    }
+}
 
 #contact {
-    background-color: #c8ccfe;
+    background-color: #BDE8F6;
+}
+
+.row#history {
+    margin-top: 0;
 }
 
 /* Media Queries */
@@ -432,6 +437,11 @@ Medium devices (700px and larger)
         display: none;
     }
 
+    .navtoggle.responsive li {
+        padding: 10px 0;
+        border-top: 0;
+    }
+
     main {
         padding-top: 132.594px;
     }
@@ -441,7 +451,7 @@ Medium devices (700px and larger)
     }
 
     #hero {
-        padding: 100px;
+        padding-top: 100px;
     }
 
     .col-md-6 {
@@ -501,7 +511,8 @@ Medium devices (700px and larger)
     #key-improvements .center,
     #ux-goals .center {
         text-align: left;
-        max-width: 515px;;
+        max-width: 515px;
+        ;
     }
 }
 
